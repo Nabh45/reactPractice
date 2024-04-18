@@ -1,0 +1,35 @@
+<!-- Creating hello world using react -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root"></div>
+    
+    <!-- once below 2 scripts are added this file/project got the superpower to understand react -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- this above script is for react dom.This is only for places where DOM is needed like  web apps and for mobile it is not needed-->
+
+
+    <!-- Once these are added and go to http://localhost:3000/ console.Once we go to console and type react and hit enter it will show React details -->
+
+    <script>
+        
+        const h1 = React.createElement('h1', null, 'Hello World from React!');
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+
+        root.render(h1);
+        
+
+    </script>
+
+
+</body>
+</html>

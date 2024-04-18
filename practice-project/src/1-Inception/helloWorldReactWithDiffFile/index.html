@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+    <!-- <script src="./app.js"></script> -->
+</head>
+<body>
+
+    <h1>Above Root</h1>
+    <div id="root">
+        <h1>Inside h1</h1>
+        <!-- Inside  this if something is added , it will get replaced by react render function. But when you refresh you will see this for a second and then it will be replaced -->
+    </div>
+    <h2>Below Root</h2>
+
+    <div id="root2">
+        <h1>Inside h1</h1>
+        <!-- Inside  this if something is added , it will get replaced by react render function. But when you refresh you will see this for a second and then it will be replaced -->
+    </div>
+
+    <!-- <script src="./app.js"></script>  -->
+    <!-- if we add it here it give error as React is not defined. So order matters -->
+
+    <!-- development script -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script> -->
+
+    <script crossorigin src="./app.js"></script>
+
+    
+</body>
+</html>
